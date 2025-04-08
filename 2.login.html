@@ -1,0 +1,27 @@
+<!DOCTYPE html> <!-- 定義 HTML5 文件類型 -->
+<html lang="zh-Hant"> <!-- 設定語系為繁體中文 -->
+<head>
+    <meta charset="utf-8" /> <!-- 設定網頁的字元編碼為 UTF-8 -->
+    <title>登入範例</title> <!-- 網頁標題，會顯示在瀏覽器分頁上 -->
+</head>
+<body>
+    <!-- 表單開始，使用 POST 方法，將資料送到 2.login.php -->
+    <form method="post" action="2.login.php">
+        
+        <!-- 帳號輸入欄位的標籤 -->
+        <label for="id">帳號：</label>
+        <!-- 使用者輸入帳號的欄位，name="id" 會傳到後端 -->
+        <input type="text" name="id" id="id"><br />
+
+        <!-- 密碼輸入欄位的標籤 -->
+        <label for="pwd">密碼：</label>
+        <!-- 使用者輸入密碼的欄位，type="password" 可隱藏輸入內容 -->
+        <input type="password" name="pwd" id="pwd"><br /><br />
+
+        <!-- 表單送出按鈕，點選後資料會送出 -->
+        <input type="submit" value="登入">
+        <!-- 表單重設按鈕，點選後會清空所有輸入欄位 -->
+        <input type="reset" value="清除">
+    </form>
+</body>
+</html>
